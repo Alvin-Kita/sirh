@@ -1,0 +1,166 @@
+/* Confirmation Page or Public read-only form view */
+.cognito .c-forms-confirmation { display: none; overflow:auto;}
+.cognito .c-forms-confirmation, .c-forms-form-readonly-public { min-height: 300px; padding: 0;}
+
+.cognito .c-forms-form-main {clear:both;margin-top:4px;}
+.cognito .c-forms-heading{overflow:visible;}
+.cognito .c-forms-heading .c-forms-form-title { padding: 28px 0 10px 0; }
+.cognito .c-forms-logo { padding: 28px 8px 0 8px; }
+.cognito .c-button-section { padding: 0 0 20px 0; }
+.cognito .c-forms-confirmation-message { padding: 28px 8px 20px 8px }
+.cognito .c-forms-confirmation-message img{max-width:100%}
+.cognito div[class^="c-page-page"] .c-button-section { padding: 0; }
+.cognito div[class^="c-page-page"] .c-forms-payment { padding: 8px 0 0 0; }
+.cognito .c-forms-not-available-message { padding: 8px; min-height:200px;}
+.cognito.c-sml .c-forms-form-main, .cognito.c-sml .c-forms-payment { padding: 0; margin-bottom: 10px; }
+.cognito.c-sml .c-forms-form-title { padding-left: 0; padding-right: 0; }
+.cognito.c-med .c-forms-form { padding: 0; }
+.cognito.c-sml .c-button-section { padding: 8px 0 0 0; }
+.cognito.c-sml .c-forms-heading .c-forms-form-title{padding-top:0;}
+
+/* Form layout */
+.c-forms-form { overflow: visible; line-height:1.3em;position:relative;}
+.c-forms-form-public-readonly{overflow:auto;}
+.c-forms-form-public-readonly .c-forms-payment-order-summary .c-title{padding-left:0;}
+.c-forms-error {padding:0 20px;}
+.cognito .c-forms-template{ overflow: visible;}
+.cognito .c-forms-heading h2{ padding: 5px 8px; margin: 0; border-bottom: 1px; }
+.cognito .c-forms-heading .c-forms-description { padding: 8px; }
+.cognito.c-sml .c-forms-logo { padding: 8px; }
+
+
+
+/* Confirmation Entry Details */
+.cognito .c-forms-form-details {clear:both;}
+
+/*Multi-page*/
+.c-forms-form-body {overflow:visible;}
+.c-forms-pages {position: relative;overflow: hidden;}
+.cognito .c-page{width: 100%;overflow:auto;}
+
+.cognito .c-progress-section{padding:8px;padding-top: 11px;overflow:auto;line-height:normal;}
+.cognito .c-forms-progress ol {counter-reset: mycounter;list-style: none;margin: 0;clear: both;padding: 0;}
+.cognito .c-forms-progress li {float: left;position: relative;list-style-type: none;margin-bottom:5px;}
+.cognito .c-forms-progress a {text-decoration: none; color: #444;}
+.cognito .c-progress-notext span {font-weight: normal;opacity:1;color:#999; font-size: 0;width: 0;height: 0;}
+
+.cognito .c-progress-steps ol {position: relative;display: inline-block;padding: 0 !important;}
+.cognito .c-progress-steps li {padding: 0;margin-right: 1em;font-weight:bold;opacity:.7;}
+.cognito .c-progress-steps a:before {content: counter(mycounter);counter-increment: mycounter;display:inline-flex; justify-content: center; vertical-align:middle;color:#999;font-size: .8em;width: 1.5em;height: 1.5em;line-height: 1.5em;border-radius: 50%;border-width: 1px ;border-style:solid;background-color: #fff;}
+.cognito .c-progress-steps li a{display:inline-block;font-weight:bold !important;}
+.cognito .c-progress-steps li span { padding-left: .5em; vertical-align:middle; }
+.cognito .c-progress-steps li.c-page-selected {font-weight: bold;opacity:1;}
+.cognito .c-progress-steps.c-progress-notext a:before {font-size: 14px;width:25px;height:25px;line-height:25px;top:0;}
+.cognito.c-sml .c-progress-steps span {font-size: 0;width: 0;height: 0;}
+
+.cognito .c-progress-bar {background: #fff;display: block;padding: 0 !important;padding-top:20px;}
+.cognito .c-progress-bar li{text-align:center;padding:8px 4px 4px 4px;border-right:1px solid transparent;}
+.cognito .c-progress-bar a:hover {cursor:pointer;}
+.cognito .c-progress-bar a{opacity:.7;}
+.cognito .c-progress-bar li.c-page-selected a {font-weight: bold;opacity:1;}
+.cognito .c-progress-bar a:before {content:"";position:absolute;top:-8px;left:0;width:100%;height:6px;display: block;}
+.cognito .c-progress-bar li.c-page-selected a:after{content:"";position:absolute;top:-3px;left:50%;width:0;height:0;display:block;border:5px solid transparent;margin-left:-5px;}
+
+.cognito .c-progress-bar.c-progress-notext a{padding:4px;}
+.cognito .c-progress-bar.c-progress-notext li.c-page-selected a:after{display:none;}
+.cognito .c-page-numbering {float: right;margin-top: 12px;padding: 8px;}
+.cognito.c-sml .c-progress-bar li{margin-bottom:0;}
+.cognito.c-sml .c-progress-bar a{font-size: 0;width: 0;height: 0;display:none;}
+.cognito.c-sml .c-progress-bar li.c-page-selected a:after{display:none;}
+
+/* Save & Resume */
+.cognito .c-forms-form .c-save-resume-button-container{float:right;margin:0 8px;}
+.cognito .c-forms-form .c-save-resume-button i { position:absolute;right:.25em;font-size:1em;}
+.cognito #c-save-resume-dialog{position:absolute;bottom:-10px;left:0;right:0;z-index: 10050;height: 1000px;width:95%;margin: auto;background-color:#fff;visibility:hidden;min-height:275px;max-width:600px;}
+.cognito #c-save-resume-dialog .dialog-contents{position:absolute;left:0;right:0;top:0;min-height:275px;padding:23px 23px 5px 23px;}
+.cognito #c-save-resume-dialog .c-save-resume-title{padding:0 8px;margin-top:14px;line-height:1.2em;}
+.cognito #c-save-resume-dialog .c-save-resume-close{position:absolute;right:1px;top:1px;cursor:pointer;padding:3px 5px;}
+.c-sml #c-save-resume-dialog .c-save-resume-close, .c-smed #c-save-resume-dialog .c-save-resume-close, .c-med #c-save-resume-dialog .c-save-resume-close{top:13px;}
+.cognito #c-save-resume-dialog #c-save-resume-content {padding:0 8px;line-height:1.3em;}
+.cognito #c-save-resume-dialog #c-save-resume-email-link{display:inline-block;width: 67px;min-height:27px;vertical-align:middle;margin:0 0 0 5px;padding-left: 0;padding-right: 0;}
+.cognito #c-save-resume-dialog #c-save-resume-email{display:inline-block;width:calc(100% - 72px);vertical-align:middle;}
+.cognito #c-save-resume-dialog .c-email-sent-message span{position:absolute;left:-9999px;top:31px;z-index:1;width:calc(100% - 62px);height:auto;background-color:#F6FDDE;border:1px solid #fff;box-shadow: 0 2px 7px rgba(0,0,0,.2);color:#698215 !important;opacity:0;padding:15px;transition:opacity 1s, left 0s 1s;}
+.cognito #c-save-resume-dialog .c-email-sent-message span::before{color:#AED136;content:"\f00c";font-family:fontawesome;font-size:35px;margin-right:10px;vertical-align: -35%;}
+.cognito.c-iframe #c-modal-overlay { background-color:transparent!important; }
+.cognito.c-iframe #c-save-resume-dialog { box-shadow: 0 0 2px 2px #ccc; }
+/* Save & Resume Submitted Transitions */
+.cognito #c-save-resume-dialog .c-email-sent-transition  .c-save-resume-header .c-save-resume-title{opacity:0.3;transition:opacity .5s;}
+.cognito #c-save-resume-dialog .c-email-sent-transition .c-save-resume-body #c-save-resume-content{opacity:0.3;transition:opacity .5s;}
+.cognito #c-save-resume-dialog .c-email-sent-transition .c-email-sent-message span{left:31px;opacity:1;transition:opacity .5s;}
+
+
+/* Payment */
+
+.cognito .c-forms-checkout { border: none; overflow: hidden; width: 100%; margin-top: 4px; }
+.cognito .c-forms-payment { border: 1px solid transparent; margin: 0;clear:both;overflow:visible;}
+.cognito .c-forms-payment h2, .cognito .c-forms-payment h3 { border-bottom: 0; }
+.cognito .c-forms-payment .c-order-noaccount {float:right !important;}
+.cognito .c-forms-payment .c-payment-section,.cognito .c-forms-confirmation .c-payment-section { padding:8px;margin:0; }
+.cognito .c-forms-payment .c-payment-section .c-field {padding-right:5px;padding-left:5px;}
+.cognito .c-forms-payment .c-background-highlight{overflow:auto;margin:0}
+.cognito .c-forms-payment table, .cognito .c-forms-payment .c-payment-section table{border-width:0;margin:0;}
+.cognito .c-forms-payment .c-payment-section.c-payment-paypal-section .c-col-1 {display:none;}
+.cognito .c-forms-payment .c-payment-section.c-payment-paypal-section .c-col-13 {width:100%;max-width:none;}
+.cognito .c-payment-section.c-payment-paypal-section .c-order-summary {max-width:none;}
+.cognito .c-order-summary tr td:first-child { width: 65%; }
+.cognito .c-order-summary tr td:first-child + td:last-child { width: 35%; }
+
+.cognito .c-forms-payment-order-summary.c-section{float:none!important;}
+.cognito .c-order-summary{width:100%; border-spacing:0;background-color:transparent;float:right;border-width:0;}
+.cognito .c-order-summary td, .cognito .c-payment-section .c-order-summary th{border:none;}
+.cognito .c-order-item > td {text-align: right; padding: 6px;min-width:100px;background-color:transparent; }
+.cognito .c-order-item div, .c-order-total div { float: left; }
+.cognito .c-order-item .c-forms-payment-lineitem-amount { font-weight: normal;white-space:nowrap;}
+.cognito .c-order-item.c-line-item > td:first-child{text-align:left;}
+.cognito .c-order-item.c-subtotal{font-weight:bold !important;}
+.cognito .c-forms-payment-lineitem-group td ,.cognito td.c-forms-payment-lineitem-group{ float: none !important; font-weight:bold; padding: 6px;}
+.cognito .c-order-item .c-forms-payment-lineitem-label {text-align: left; font-weight: normal;  }
+.cognito .c-order-item .c-forms-payment-lineitem-label.grouped { padding-left: 15px; }
+.cognito .c-payment-section-lineitem-variant { font-style: italic; }
+.cognito .c-order-total { font-weight: bold; clear: both; }
+.cognito .c-forms-payment-label { margin: 0px 5px; padding: 0;  }
+.cognito .c-forms-payment-order-summary .c-forms-payment-total-amount { font-size:150%; margin: 0 8px; padding: 10px 5px 0 5px; text-align: right; font-weight: bold !important;line-height:120%; }
+.cognito .c-forms-payment-total-amount,.cognito .c-forms-order-total-amount{ font-size:150%; margin: 0; padding: 10px 5px 0 5px; text-align: right; font-weight: bold !important;line-height:120%; }
+
+.cognito .c-footer-terms ul{padding-bottom:10px;}
+
+.cognito .c-order-amount-due { display: table; width: 100%; font-weight: bold; }
+.cognito .c-order-amount-due > div { display: table-cell; padding: 4px; text-align: right; }
+.cognito .c-order-amount-due > div:first-child { text-align: left; }
+
+.cognito .c-forms-payment-order-summary .detail{padding:5px 8px;line-height:100%;}
+.cognito .c-forms-payment-order-summary .c-background-highlight{overflow:auto;padding:8px;}
+.cognito .c-forms-payment-subtotal-amount, .cognito .c-forms-payment-fee-amount{white-space:nowrap;}
+
+/* Saving Customer's card but not collecting payment */
+.cognito .c-forms-payment.c-not-collecting-payment .c-order-summary { display:none; }
+.cognito .c-forms-payment.c-not-collecting-payment .c-forms-payment-total-amount { display: none; }
+
+/* Form Card on File Agreement Checkbox Field */
+.cognito .c-forms-payment .c-card-on-file-agreement-field { display: none; }
+.cognito .c-forms-payment .c-card-on-file-agreement-field.c-show-card-agreement { display: block; }
+
+/* Medium */
+.cognito.c-med .c-forms-payment .c-order-item > td {min-width:initial;}
+.cognito.c-med .c-table .c-payment-account .c-section {padding-left:0!important;}
+
+/* Small */
+.cognito.c-sml .c-table .c-payment-account .c-section {padding-left:0!important;}
+.cognito.c-sml .c-table .c-payment-account, .cognito.c-sml .c-table .c-payment-amountdue, .cognito.c-sml .c-table .c-payment-payamount, .cognito.c-sml .c-table .c-payment-item {display:block;width:100% !important;}
+.cognito.c-sml .c-table .c-payment-amountdue, .cognito.c-sml .c-table .c-payment-account { border-bottom: 0!important; }
+.cognito.c-sml .c-table .c-payment-payamount { padding:8px 0; }
+.cognito.c-sml #c-save-resume-dialog{width:100%;max-height:90%}
+.cognito.c-sml #c-save-resume-dialog #c-save-resume-email-link{width:100%;float:none;margin:0;margin-top:10px;}
+.cognito.c-sml #c-save-resume-dialog #c-save-resume-email{float:none;width:100%;display:inline-block;}
+.cognito.c-sml .c-forms-form .c-save-resume-button-container{float:none;}
+.cognito #c-web-paypal-checkout{ display:inline-block; }
+.cognito.c-sml #c-web-paypal-checkout{text-align:center;padding:0; margin-bottom: 7px;}
+.cognito.c-sml .c-forms-payment .c-payment-section.c-payment-paypal-section .c-order-item > td {min-width:auto;min-width:initial;}
+/*To Print Correctly in Firefox and for smooth transitions on multipage forms*/
+	.cognito .c-forms-template > .c-section, .cognito .c-forms-form-body > .c-section{float:none!important;  }
+	.cognito .c-forms-template > .c-section:after,.cognito .c-forms-form-body > .c-section:after{content: "";  display: table;  clear: both;}
+
+@media print
+{
+	.cognito .c-page{display:inline-block;}
+}
